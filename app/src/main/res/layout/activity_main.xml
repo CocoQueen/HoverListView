@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.coco.floatmenulistview.MainActivity">
+
+
+    <TextView
+        android:id="@+id/mTv_title"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#ddf"
+        android:gravity="center"
+        android:text="标题"
+        android:textColor="#000" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mTv_title"
+        >
+        <ListView
+            android:id="@+id/mLv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/mLinear_hide"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#ccedc7"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/mTv_float"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="悬浮部分"
+
+                />
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>
